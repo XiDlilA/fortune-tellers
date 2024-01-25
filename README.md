@@ -1,7 +1,7 @@
-# DateInfo
+# Fortune-tellers
 
 This is a Python project that uses the `rich` library to create a visually appealing command-line interface, displaying various information about the current date, including lunar calendar, solar terms, zodiac signs, and Bazi.
-
+![Alt text](image.png)
 ## Dependencies
 
 This project depends on the following Python libraries:
