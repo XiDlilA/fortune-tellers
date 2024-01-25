@@ -1,9 +1,12 @@
-from model.DateInfo import DateInfo
-from datetime import *
+from model.DateInfo import *
+import click 
 
-day = datetime.now()
 
-res = DateInfo(day)
-print("当前时间：",day)
-print("八字计算",res.getBaZi())
+@click.command()
+@click.option('--today/--no-today', default=False, help='Show today info')
+def info(today):
+    if today:
+        API().today()
 
+
+info()
